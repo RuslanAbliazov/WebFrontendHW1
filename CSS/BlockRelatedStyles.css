@@ -1,0 +1,162 @@
+html {
+    /*height: 100vh;*/
+}
+
+body {
+    margin: 10px 9px 10px 10px;
+    background: #9999aa;
+    font: 30px Arial;
+    /*height: 100vh;*/
+}
+
+div {
+    background-color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+
+a {
+    padding: 5px;
+    width: 90%;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 10pt;
+    border-bottom: 1px #eeeeee solid;
+}
+
+.aInLeftSideBar {
+    padding: 5px;
+    width: 90%;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 10pt;
+    border-bottom: 1px #eeeeee solid;
+}
+
+.aInSummary {
+    font-size: 9.6px;
+    color: #660000;
+    padding: 0;
+    border: 0;
+    margin: 3px 0 0 0;
+}
+
+p {
+    margin: 10px 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    padding: 40px 0 5px 0;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 15px 0 5px;
+}
+
+.leftSideBlocks {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #ffffff;
+    letter-spacing: 1px;
+    list-style-type: none;
+}
+
+.headerStyle {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+    color: #660000;
+}
+
+.headerInSummaryStyle {
+    width: 100%;
+    text-align: center;
+    color: #660000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.ulInSummary {
+    padding: 0 0 0 15px;
+    font-size: 115%;
+}
+
+#header {
+    background-color: #7777AA;
+    color: white;
+    letter-spacing: 3px;
+    padding: 10px 0 10px 101px;
+    height: 1em;
+    border-left: #666666 solid 2px;
+    border-top: #666666 solid 2px;
+    border-right: #666666 solid 2px;
+}
+
+#leftSideBar {
+    float:left;
+    padding: 10px;
+    padding-right: 60px;
+    border-left: #666666 solid 2px;
+    height: 181.35vh;
+    margin: 0 0 10px 0;
+    border-bottom: #666666 solid 2px;
+}
+
+#main {
+    padding: 0 0 10px 0;
+    background-color: #ffffff;
+    color: #222222;
+    vertical-align: top;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#summary {
+    float:right;
+    vertical-align: top;
+    border: #c9c9c9 solid 1px;
+    margin: 20px 0 10px 10px;
+    padding: 5px;
+    width: 300px;
+    background-color: white;
+    font-size: 9.6px;
+    color: #660000;
+
+}
+
+#redactInfo {
+    text-align: right;
+    font-size: 9pt;
+    padding-bottom: 0;
+    margin: 10px 0 0 10px; /*в оригинале было 10 для padding и 10 для ьфкпшт*/
+}
+
+#content {
+    background-color: white;
+    padding: 10px 10px 0 10px;
+    border-right: #666666 solid 2px;
+    border-left: 2px dotted #dddddd;
+    border-bottom: #666666 solid 2px;
+    margin-left: 123px;
+    margin-bottom: 10px;
+}
+
+#listOfDefinitions {
+    margin: 0;
+    padding: 0 0 0 20px;
+}

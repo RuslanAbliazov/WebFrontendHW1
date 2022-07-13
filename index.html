@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>MAXimal :: algo :: Числа Каталана</title>
+    <link rel="stylesheet" href="CSS/ImageRelatedStyles.css">
+    <link rel="stylesheet" href="CSS/BlockRelatedStyles.css">
+</head>
+<body>
+<div id="header">MAXimal</div>
+<div id="leftSideBar">
+    <ul>
+        <li class="leftSideBlocks"><a href="http://e-maxx.ru/index.php" class="aInLeftSideBar">home</a></li>
+        <li class="leftSideBlocks"><a href="http://e-maxx.ru/algo/" class="aInLeftSideBar">algo</a></li>
+        <li class="leftSideBlocks"><a href="http://e-maxx.ru/bookz/" class="aInLeftSideBar">books</a></li>
+        <li class="leftSideBlocks"><a href="http://e-maxx.ru/forum/" class="aInLeftSideBar">forum</a></li>
+        <li class="leftSideBlocks"><a href="http://e-maxx.ru/about.php" class="aInLeftSideBar">about</a></li>
+    </ul>
+</div>
+<div id = "content">
+<p id="redactInfo">добавлено: DD MMM YYYY HH:MM <br>
+    редактировано: DD MMM YYYY HH:MM</p>
+    <div id="summary">
+        <p class="headerInSummaryStyle">Содержание</p>
+        <ul class = "ulInSummary">
+            <li><a class="aInSummary">Числа Каталана</a></li>
+            <ul class="ulInSummary">
+                <li><a class="aInSummary">Последовательность</a></li>
+                <li><a class="aInSummary">Вычисления</a></li>
+                <ul class="ulInSummary">
+                    <li><a class="aInSummary">Рекурентная формула</a></li>
+                    <li><a class="aInSummary">Аналитическая формула</a></li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+<div id="main">
+    <h1 class="headerStyle">Числа Каталана</h1>
+
+    <p>Числа Каталана — числовая последовательность, встречающаяся в удивительном числе комбинаторных задач.</p>
+
+    <p>Эта последовательность названа в честь бельгийского математика Каталана (Catalan),
+        жившего в 19 веке, хотя на самом деле она была известна ещё Эйлеру (Euler), жившему за век до Каталана.</p>
+    <h2 class="headerStyle">Последовательность</h2>
+    <p>Первые несколько чисел Каталана <img src="images/nCatalanNumbers.png" alt="C_n" class="texImage"> (начиная с нулевого):<br>
+        <p class="grayImageBox">
+            <img src="images/firstWrittenNumbers.png" alt="1, 1, 2, 5, 14, 42, 132, 429, 1430, ..." class="texImage">
+        </p>
+    </p>
+    <p>Числа Каталана встречаются в большом количестве задач комбинаторики.
+        <b><img src="images/n.png" alt="n" class="texImage">-ое число Каталана </b>— это:</p>
+    <ul id="listOfDefinitions">
+        <li>Количество корректных скобочных последовательностей, состоящих из <img src="images/n.png" alt="n" class="texImage">
+            открывающих и <img src="images/n.png" alt="n" class="texImage"> закрывающих скобок.</li>
+        <li>Количество корневых бинарных деревьев с <img src="images/n+1.png" alt="n+1" class="texImage">
+            листьями (вершины не пронумерованы).</li>
+        <li>Количество способов полностью разделить скобками <img src="images/n+1.png" alt="n+1" class="texImage">
+            множитель.</li>
+        <li>Количество триангуляций выпуклого <img src="images/n+2.png" alt="n+2" class="texImage">-угольника
+            (т.е. количество разбиений многоугольника непересекающимися диагоналями на треугольники).</li>
+        <li>Количество способов соединить <img src="images/2n.png" alt="2n" class="texImage"> точек на окружности
+            <img src="images/n.png" alt="n" class="texImage">непересекающимися хордами.</li>
+        <li>Количество неизоморфных полных бинарных деревьев с <img src="images/n.png" alt="n" class="texImage">
+            внутренними вершинами (т.е. имеющими хотя бы одного сына).</li>
+        <li>Количество монотонных путей из точки <img src="images/(0,0).png" alt="(0,0)" class="texImage">
+            в точку <img src="images/(n,n).png" alt="(n,n)" class="texImage"> в квадратной решётке размером
+            <img src="images/nxn.png" alt="nxn" class="texImage">, не поднимающихся над главной диагональю.</li>
+        <li>Количество перестановок длины <img src="images/n.png" alt="n" class="texImage">,
+            которые можно отсортировать стеком (можно показать, что перестановка является сортируемой стеком тогда и
+            только тогда, когда нет таких индексов <img src="images/i_lower_j_lower_k.png" alt="i<j<k" class="texImage">,
+            что <img src="images/a_klower_a_i_lower_a_j.png" alt=">a_k<a_i<a_j" class="texImage">).</li>
+        <li>Количество непрерывных разбиений множества из <img src="images/n.png" alt="n" class="texImage"> элементов
+            (т.е. разбиений на непрерывные блоки).</li>
+        <li>Количество способов покрыть лесенку <img src="images/1...n.png" alt="1...n" class="texImage"> с помощью
+            <img src="images/n.png" alt="n" class="texImage"> прямоугольников
+            (имеется в виду фигура, состоящая из <img src="images/n.png" alt="n" class="texImage"> столбцов,
+            <img src="images/i.png" alt="i" class="texImage">-ый из которых имеет высоту
+            <img src="images/n.png" alt="n" class="texImage">).</li>
+    </ul>
+    <h2 class="headerStyle">Вычисление</h2>
+    <p>Имеется две формулы для чисел Каталана: рекуррентная и аналитическая. Поскольку мы считаем, что все приведённые
+        выше задачи эквивалентны, то для доказательства формул мы будем выбирать ту задачу,
+        с помощью которой это сделать проще всего.</p>
+    <h3 class="headerStyle">Рекуррентная формула</h3>
+    <p class="grayImageBox">
+        <img src="images/ReccurentFormula.png" alt="C_n=Sum(from k=0 to n-1: C_k*C_n-1-k)" class="texImage">
+    </p>
+    <p>Рекуррентную формулу легко вывести из задачи о правильных скобочных последовательностях.</p>
+    <p> Самой левой открывающей скобке l соответствует определённая закрывающая скобка r,
+        которая разбивает формулу две части,
+        каждая из которых в свою очередь является правильной скобочной последовательностью.
+        Поэтому, если мы обозначим  <img src="images/k_definition.png" alt="k = r-l-1" class="texImage">,
+        то для любого фиксированного <img src="images/r.png" alt="r" class="texImage"> будет ровно
+        <img src="images/CMultiplyC.png" alt="C_k*C_{n-1-k}" class="texImage"> способов.
+        Суммируя это по всем допустимым <img src="images/k.png" alt="k" class="texImage">,
+        мы и получаем рекуррентную зависимость на <img src="images/nCatalanNumbers.png" alt="C_n" class="texImage">.</p>
+    <h3 class="headerStyle">Аналитическая формула</h3>
+    <p class="grayImageBox">
+        <img src="images/analiticFormula.png" alt="C_n=1/(n+1)C_n_2n" class="texImage">
+    </p>
+    <p>(здесь через <img src="images/C_n_k.png" alt="C_n_k" class="texImage"> обозначен, как обычно,
+        биномиальный коэффициент).</p>
+    <p>Эту формулу проще всего вывести из задачи о монотонных путях. Общее количество монотонных путей в решётке
+        размером <img src="images/nxn.png" alt="nxn" class="texImage"> равно
+        <img src="images/C_n_2n.png" alt="C_n_2n" class="texImage">. Теперь посчитаем количество монотонных путей,
+        пересекающих диагональ. Рассмотрим какой-либо из таких путей, и найдём первое ребро,
+        которое стоит выше диагонали. Отразим относительно диагонали весь путь, идущий после этого ребра.
+        В результате получим монотонный путь в решётке
+        <img src="images/(n-1)x(n+1).png" alt="(n-1)x(n+1)" class="texImage">. Но, с другой стороны,
+        любой монотонный путь в решётке <img src="images/(n-1)x(n+1).png" alt="(n-1)x(n+1)" class="texImage">
+        обязательно пересекает диагональ, следовательно, он получен как раз таким способом из какого-либо
+        (причём единственного) монотонного пути, пересекающего диагональ,
+        в решётке <img src="images/nxn.png" alt="nxn" class="texImage">. Монотонных путей в решётке
+        <img src="images/(n-1)x(n+1).png" alt="(n-1)x(n+1)" class="texImage"> имеется C_{2n}^{n-1}.
+        В результате получаем формулу:</p>
+    <p class="grayImageBox">
+        <img src="images/analytic_formula_derivation.png" alt="C_n=C_n_2n - C_n-1_2n=1/(n+1)C_n_2n" class="texImage"> </p>
+</div>
+</div>
+</body>
+</html>
