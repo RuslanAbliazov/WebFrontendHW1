@@ -75,6 +75,7 @@ h3 {
     list-style-type: none;
 }
 
+/*no relate to #header. This style is for name of paragraphs*/
 .headerStyle {
     font-weight: bold;
     text-align: left;
@@ -96,6 +97,7 @@ h3 {
     font-size: 115%;
 }
 
+/* this one for top block of site*/
 #header {
     background-color: #7777AA;
     color: white;
