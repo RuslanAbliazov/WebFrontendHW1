@@ -112,9 +112,9 @@ h3 {
 #leftSideBar {
     float:left;
     padding: 10px;
-    padding-right: 60px;
+    /*padding-right: 60px;*/
     border-left: #666666 solid 2px;
-    height: 181.35vh;
+    /*height: 181.35vh;*/
     /*margin: 0 0 10px 0;*/
     border-bottom: #666666 solid 2px;
 }
